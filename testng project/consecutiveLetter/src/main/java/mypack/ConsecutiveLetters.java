@@ -9,11 +9,12 @@ public class ConsecutiveLetters {
 		
 		for(int i=0;i<input.size();i++) {
 			String word=new String(input.get(i));
+			String s=word.toLowerCase();
+			System.out.println(word);
 			
-			
-			for(int j=0;j<word.length()-1;j++) {
-				if(word.charAt(j)==word.charAt(j+1)) {
-					results.add(word);
+			for(int j=0;j<s.length()-1;j++) {
+				if(s.charAt(j)==s.charAt(j+1)) {
+					results.add(s);
 					break;
 				}
 			}			
